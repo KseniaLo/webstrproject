@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Myriad Pro Black SemiExtended';
+    src: url('MyriadPro-BlackSemiExt.eot');
+    src: url('MyriadPro-BlackSemiExt.eot?#iefix') format('embedded-opentype'),
+    url('MyriadPro-BlackSemiExt.woff') format('woff'),
+    url('MyriadPro-BlackSemiExt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+        font-family: 'Nautilus Pompilius Regular';
+        src: url('NautilusPompilius.eot');
+        src: url('NautilusPompilius.eot?#iefix') format('embedded-opentype'),
+        url('NautilusPompilius.woff') format('woff'),
+        url('NautilusPompilius.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+@font-face {
+        font-family: 'Core Rhino 35 Light W01 Regular';
+        src: url('Core Rhino 35 Light W01 Regular.eot');
+        src: url('Core Rhino 35 Light W01 Regular') format('embedded-opentype'),
+        url('Core Rhino 35 Light W01 Regular.woff') format('woff'),
+        url('Core Rhino 35 Light W01 Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Core Rhino 45 Regular W01 Rg';
+        src: url('Core Rhino 45 Regular W01 Rg.eot');
+        src: url('Core Rhino 45 Regular W01 Rg') format('embedded-opentype'),
+        url('Core Rhino 45 Regular W01 Rg.woff') format('woff'),
+        url('Core Rhino 45 Regular W01 Rg.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+.higherMenu ul {
+        width: 100%; 
+    }
+.higherMenu ul li {
+    float: none;
+    display: inline-block;   
+}
+.higherMenu ul a {
+    color: #9d6043;
+    text-align:center;   
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Myriad Pro Black SemiExtended';
+    padding: 20px;
+}
+.logo {
+    font-family: 'Nautilus Pompilius Regular';
+    text-decoration: none;
+    font-size: 60px;
+    /*line-height: 100px;*/
+    color: #864729;
+  }
+  .conf{
+    font-family: 'Core Rhino 45 Regular W01 Rg';
+    font-size: 24px;
+    /*line-height: 10px;*/
+    color: #663016;
+  }
+  .Geotag {
+    line-height: 60px;
+  }
+  .geotag1 {
+    font-family: 'Core Rhino 45 Regular W01 Rg';
+    font-size: 16px;
+    line-height: -25px;
+    color: #9d6043;
+  }
+  .geotag2 {
+    font-family: 'Core Rhino 45 Regular W01 Rg';
+    font-size: 16px;
+    color: #9d6043;
+  }
+  .geotag3 {
+    font-family: 'Core Rhino 45 Regular W01 Rg';
+    font-size: 16px;
+    line-height: 25px;
+    color: #9d6043;
+  }
+  .Phone {
+    /*valign: "top";
+    vertical-align: top;*/
+  }
+  .phone {
+    font-family: 'Core Rhino 35 Light W01 Regular';
+    font-size: 24px;
+    line-height: 35px;
+    color: #9d6043;
+  }
