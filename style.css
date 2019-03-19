@@ -35,12 +35,13 @@
         font-style: normal;
     }
 .higherMenu ul {
-        width: 100%; 
+        width: 100%;
+        text-align: center;
     }
 .higherMenu ul li {
     float: none;
     display: inline-block; 
-    padding: 10px; 
+    padding: 25px; 
 }
 .higherMenu ul a {
     color: #9d6043;
@@ -49,6 +50,7 @@
     font-size: 16px;
     font-family: 'Myriad Pro Black SemiExtended';
     padding: 20px;
+    text-transform: uppercase;
 }
 .logo {
     font-family: 'Nautilus Pompilius Regular';
@@ -58,7 +60,7 @@
   }
   .headTable {
     width: 100%;
-    padding: 10px 35px;
+    padding: 10px 80px;
     float: none;
     display: inline-block;
   }
@@ -69,23 +71,14 @@
     color: #663016;
   }
   .Geotag {
-    line-height: 57px;
+    line-height: 60px;
     margin: "top";
   }
-  .geotag1 {
+  .geotag {
     font-family: 'Core Rhino 45 Regular W01 Rg';
     font-size: 16px;
     color: #9d6043;
-  }
-  .geotag2 {
-    font-family: 'Core Rhino 45 Regular W01 Rg';
-    font-size: 16px;
-    color: #9d6043;
-  }
-  .geotag3 {
-    font-family: 'Core Rhino 45 Regular W01 Rg';
-    font-size: 16px;
-    color: #9d6043;
+    padding: 0px -60px 30px;
   }
   .Phone {
     vertical-align: top;
