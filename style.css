@@ -60,7 +60,7 @@
   }
   .headTable {
     width: 100%;
-    padding: 10px 80px;
+    padding: 10px 60px;
     float: none;
     display: inline-block;
   }
@@ -70,22 +70,56 @@
     padding-left: 80px; 
     color: #663016;
   }
-  .Geotag {
-    line-height: 60px;
-    margin: "top";
+  .Geotag1 {
+    float: left;
+    /*line-height: 70px;
+    margin: "top";*/
+    padding: 0px 0px 40px;
   }
-  .geotag {
+  .Geotag2 {
+    float: left;
+    padding: 0px 0px 0px;
+  }
+  .geotag1 {
+    float: left;
     font-family: 'Core Rhino 45 Regular W01 Rg';
     font-size: 16px;
     color: #9d6043;
-    padding: 0px -60px 30px;
+    padding: 0px 0px 40px;
+  }
+  .geotag2 {
+    float: left;
+    font-family: 'Core Rhino 45 Regular W01 Rg';
+    font-size: 16px;
+    color: #9d6043;
+    padding: 0px 0px 0px;
   }
   .Phone {
-    vertical-align: top;
+    /*vertical-align: top;*/
+    float: left;
   }
-  .phone {
+  .phone1 {
+    float: left;
     font-family: 'Core Rhino 35 Light W01 Regular';
     font-size: 24px;
     line-height: 35px;
     color: #9d6043;
   }
+  .phone2 {
+    float: left;
+    font-family: 'Core Rhino 35 Light W01 Regular';
+    font-size: 24px;
+    line-height: 35px;
+    color: #9d6043;
+    padding: 0px 20px;
+  }
+  .block {
+    display:inline-block;
+    vertical-align:middle;
+  }
+  .geotag2 p { 
+    line-height: 5px;
+  }
+  .geotag1 p { 
+    line-height: 5px;
+  }  
