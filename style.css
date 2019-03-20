@@ -34,92 +34,112 @@
         font-weight: normal;
         font-style: normal;
     }
+    body {
+      background: url(Images/BackGround.png);
+     }
 .higherMenu ul {
         width: 100%;
         text-align: center;
+        font-size: 16px;
+        line-height: 18px;
+        padding-bottom: 25px;
+        padding-top: 25px;
     }
 .higherMenu ul li {
     float: none;
-    display: inline-block; 
-    padding: 25px; 
+    display: inline-block;
 }
 .higherMenu ul a {
     color: #9d6043;
     text-align:center;   
     text-decoration: none;
-    font-size: 16px;
     font-family: 'Myriad Pro Black SemiExtended';
-    padding: 20px;
     text-transform: uppercase;
+}
+.gl {
+  width: 100%;
+  padding-top: 50px;
 }
 .logo {
     font-family: 'Nautilus Pompilius Regular';
     text-decoration: none;
     font-size: 60px;
+    line-height: 18px;
     color: #864729;
-  }
-  .headTable {
-    width: 100%;
-    padding: 10px 60px;
-    float: none;
-    display: inline-block;
   }
   .conf{
     font-family: 'Core Rhino 45 Regular W01 Rg';
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 18px;
     padding-left: 80px; 
+    padding-top: 34px;
     color: #663016;
   }
-  .Geotag1 {
-    float: left;
-    /*line-height: 70px;
-    margin: "top";*/
-    padding: 0px 0px 40px;
+  .Geo {
+    line-height: 30px;
+    /*margin: "top";
+    padding: 0px 0px 40px;*/
   }
-  .Geotag2 {
-    float: left;
-    padding: 0px 0px 0px;
-  }
-  .geotag1 {
-    float: left;
+  .geotag1 span{
+    position: relative;
+    padding-left: 35px;
     font-family: 'Core Rhino 45 Regular W01 Rg';
     font-size: 16px;
+    line-height: 18px;
     color: #9d6043;
-    padding: 0px 0px 40px;
+  }
+  .geotag1 span::before {
+    content: "";
+    background: url(Images/Geotag.png);
+    position: absolute;
+    width: 19px;
+    height: 26px;
+    left: 0px;
   }
   .geotag2 {
     float: left;
     font-family: 'Core Rhino 45 Regular W01 Rg';
     font-size: 16px;
+    line-height: 18px;
     color: #9d6043;
-    padding: 0px 0px 0px;
   }
   .Phone {
-    /*vertical-align: top;*/
-    float: left;
+    padding-left: 20px;
   }
-  .phone1 {
-    float: left;
+  .phone1 span{
+    position: relative;
+    padding-left: 10px;
     font-family: 'Core Rhino 35 Light W01 Regular';
     font-size: 24px;
-    line-height: 35px;
+    line-height: 33px;
     color: #9d6043;
+  }
+  .phone1 span::before {
+    content: "";
+    background: url(Images/Phone.png);
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    left: 0px;
   }
   .phone2 {
-    float: left;
     font-family: 'Core Rhino 35 Light W01 Regular';
     font-size: 24px;
-    line-height: 35px;
+    line-height: 33px;
     color: #9d6043;
-    padding: 0px 20px;
+    padding-left: 20px;
   }
-  .block {
-    display:inline-block;
-    vertical-align:middle;
+  .banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 75px;
+    padding-bottom: 40px;
   }
-  .geotag2 p { 
-    line-height: 5px;
+  .left-menu-wrap ul{
+    margin-left: 0;
+    padding-left: 0;
   }
-  .geotag1 p { 
-    line-height: 5px;
-  }  
+  .left-menu-wrap li{
+    list-style-type: none;
+  }

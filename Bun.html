@@ -6,44 +6,82 @@
 <link rel="stylesheet" href="bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="style.css"> <!-- Подключаем внешнюю таблицу стилей -->
 <script src="script.js"></script> <!-- Подключаем сценарии -->
-<div >
-    <nav class="higherMenu">
-        <ul class="higherMenuStrip">
-            <li class="col-md-2"><a href="main.html" title="Главная">главная</a></li>
-            <li class="col-md-3"><a href="company.html" title="О компании">о компании</a></li>   
-            <li class="col-md-2"><a href="catalogue.html" title="Каталог"> каталог</a></li>  
-            <li class="col-md-2"><a href="contacts.html" title="Контакты">контакты</a></li>   
-        </ul>
-    </nav>
-</div>
-<div>
-     <table class="headTable">
-                <td class="col-md-5 col-md-offset-1 ">
-                    <div ><a href="Bun.html" title="ООО «Плюшка»" class="logo">ООО «Плюшка»</a> </div> 
-                    <div class="conf">Кондитерские изделия</div>
-                </td>
-                <div  class="block" class="col-md-3 col-md-offset-1">
-                <td>
-                    <div class="Phone"><img src="Images/Phone.png"></div>
-                    <div class="phone1">8 (800) 888-88-88</div>
-                    <div class="phone2">8 (800) 888-88-88</div>
-                    <div class="phone2">8 (800) 888-88-88</div>
-                </td></div>
-                <div class="col-md-1">
-                <td >
-                        <div class="Geotag1"><img src="Images/Geotag.png"></div>
-                        <div class="Geotag2"><img src="Images/Geotag.png"></div>
-                </td>
-                </div>
-                <td class="col-md-2">
-                    <div class="geotag2"><p>г. Оренбург,</p></div>
-                    <div class="geotag1"><p>ул. Примерная, дом 15</p></div>
-                    <div class="geotag2"><p>г. Оренбург,</p></div>
-                    <div class="geotag2"><p>ул. Примерная, дом 15</p></div>
-                </td>
-    </table>
-</div>
 </head>
-<body> <!-- Основная часть документа -->
+<body>
+    <header id="header">
+            <div class="container">
+                       <nav class="higherMenu">
+                            <ul class="higherMenuStrip col-md-offset-1">
+                                <div class="col-md-2"><li><a href="Bun.html" title="Главная">главная</a></li></div>
+                                <div class="col-md-3"><li><a href="company.html" title="О компании">о компании</a></li></div>
+                                <div class="col-md-2"><li><a href="catalogue.html" title="Каталог"> каталог</a></li></div>   
+                                <div class="col-md-2"><li><a href="contacts.html" title="Контакты">контакты</a></li></div>   
+                            </ul>
+                        </nav>
+                    <div class="gl">
+                     <div class="row">
+                        <div class="col-md-5">
+                            <a href="Bun.html" title="ООО «Плюшка»" class="logo">ООО «Плюшка»</a>
+                            <div class="conf">Кондитерские изделия</div>
+                        </div>
+                        <div  class="col-md-4">
+                            <div class="Phone">
+                                <div class="phone1"><span>8 (800) 888-88-88</span></div>
+                                <div class="phone2">8 (800) 888-88-88</div>
+                                <div class="phone2">8 (800) 888-88-88</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="Geo">
+                                <div class="geotag1"><span>г. Оренбург,</span></div>
+                                <div class="geotag2">ул. Примерная, дом 15</div>
+                                <div class="geotag1"><span>г. Оренбург,</span></div>
+                                <div class="geotag2">ул. Примерная, дом 15</div>
+                            </div>
+                        </div>
+                     </div>
+                   </div>    
+            </div>
+    </header>
+    <div class="row">
+            <div class="banner">
+                <img src="Images/Banner.png">
+            </div>
+    </div>
+    <main id="middle">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 col-sm-12">
+                  <aside class="sidebar">
+                    <div class="titl_m">Каталог товаров</div>
+                    <nav id="sidebar-menu" class="left-menu-wrap">
+                      <ul>
+                        <li><a href="main.html" title="Пример пункта">Пример пункта</a></li>
+                        <li><a href="main.html" title="Пример пункта 2">Пример пункта 2</a></li>
+                        <li><a href="main.html" title="Выпадющий пункт">Выпадющий пункт</a></li>
+                        <li><a href="main.html" title="Пример пункта 3">Пример пункта 3</a></li>
+                        <li><a href="main.html" title="Пример пункта в две строки">Пример пункта в две <br>строки</a></li>
+                      </ul>
+                    </nav>
+                  </aside>
+                </div>
+                <div class="col-md-8 col-sm-12">
+                  <div id="content">
+                      <!-- <h1>Главная</h1>
+                      <div class="content_inner">
+                        <p>Сервис доставки пиццы и роллов в Оренбурге для тех, кто ценит время, деньги и здоровье. Выбираете повкуснее и оплачиваете, готовим и привозим в течение часа по адресу. Быстро, вкусно, круглосуточно.</p>
+                        <p>Иногда не получается или нет времени на готовку, но не хочется питаться дорогой и вредной ерундой. Мы снимаем с Вас эту заботу. Через час у Вас на столе будет еда, за которую Вас поблагодарят желудок и кошелёк.
+                            Быстро</p>
+                        <p>Каждое блюдо готовится сразу после получения заказа, с соблюдением ГОСТ 33688-2015 (нормы и правила по гигиене в общественном питании), поварами с действующей санитарной медицинской книжкой. Курьер забирает заказ и везёт к Вам. В среднем от заказа до доставки — 50-70 минут.
+                            Вкусно</p>
+                        <p>Готовим из свежих и натуральных продуктов — в нашей компании консерванты и усилители вкуса вне закона. Используем исключительно сертифицированную продукцию и работаем только с проверенными поставщиками.
+                            Круглосуточно</p>
+                        <p>В пиццериях ведётся круглосуточное видеонаблюдение в целях постоянного контроля качества. Круглосуточно — потому что это наш режим работы.</p>
+                      </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+    </main>
 </body>
 </html>
