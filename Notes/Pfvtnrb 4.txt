@@ -1,0 +1,5 @@
+max-width of the screen:
+1200
+992
+768
+450

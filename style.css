@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'Myriad Pro Black SemiExtended';
+    src: url('fonts/MyriadPro-BlackSemiExt.eot');
+    src: url('fonts/MyriadPro-BlackSemiExt.eot?#iefix') format('embedded-opentype'),
+    url('fonts/MyriadPro-BlackSemiExt.woff') format('woff'),
+    url('fonts/MyriadPro-BlackSemiExt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+        font-family: 'Nautilus Pompilius Regular';
+        src: url('fonts/NautilusPompilius.eot');
+        src: url('fonts/NautilusPompilius.eot?#iefix') format('embedded-opentype'),
+        url('fonts/NautilusPompilius.woff') format('woff'),
+        url('fonts/NautilusPompilius.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+@font-face {
+        font-family: 'Core Rhino 35 Light W01 Regular';
+        src: url('fonts/Core Rhino 35 Light W01 Regular.eot');
+        src: url('fonts/Core Rhino 35 Light W01 Regular') format('embedded-opentype'),
+        url('fonts/Core Rhino 35 Light W01 Regular.woff') format('woff'),
+        url('fonts/Core Rhino 35 Light W01 Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Core Rhino 45 Regular W01 Rg';
+        src: url('fonts/Core Rhino 45 Regular W01 Rg.eot');
+        src: url('fonts/Core Rhino 45 Regular W01 Rg') format('embedded-opentype'),
+        url('fonts/Core Rhino 45 Regular W01 Rg.woff') format('woff'),
+        url('fonts/Core Rhino 45 Regular W01 Rg.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+      font-family: 'Myriad Pro Regular';
+      src: url('fonts/MyriadPro-Regular.eot');
+      src: url('fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/MyriadPro-Regular.woff') format('woff'),
+      url('fonts/MyriadPro-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      }
+
+    @font-face {
+        font-family: 'Myriad Pro Bold';
+        src: url('fonts/MyriadPro-Bold.eot');
+        src: url('fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/MyriadPro-Bold.woff') format('woff'),
+        url('fonts/MyriadPro-Bold.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+      font-family: 'Core Rhino 65 Bold W01 Regular';
+      src: url('fonts/Core Rhino 65 Bold W01 Regular.eot');
+      src: url('fonts/Core Rhino 65 Bold W01 Regular') format('embedded-opentype'),
+      url('fonts/Core Rhino 65 Bold W01 Regular.woff') format('woff'),
+      url('fonts/Core Rhino 65 Bold W01 Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+  }
+    
+    body {
+      background: url(Images/BackGround.png);
+     }
+.higherMenu ul {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        line-height: 18px;
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+.higherMenu ul li {
+    float: none;
+    display: inline-block;
+}
+.higherMenu ul a {
+    color: #9d6043;
+    text-align:center;   
+    text-decoration: none;
+    font-family: 'Myriad Pro Black SemiExtended';
+    text-transform: uppercase;
+}
+.gl {
+  width: 100%;
+  padding-top: 50px;
+}
+.logo {
+    font-family: 'Nautilus Pompilius Regular';
+    text-decoration: none;
+    font-size: 60px;
+    line-height: 18px;
+    color: #864729;
+    display: block;
+    margin-top: 20px;
+  }
+  .logo a:hover {
+    color: #864729;
+   }
+  .conf{
+    font-family: 'Core Rhino 45 Regular W01 Rg';
+    font-size: 20px;
+    line-height: 18px;
+    padding-left: 80px; 
+    padding-top: 34px;
+    color: #663016;
+  }
+  .Phone {
+    padding-left: 20px;
+  }
+  .phone1 span{
+    position: relative;
+    padding-left: 20px;
+    font-family: 'Core Rhino 35 Light W01 Regular';
+    font-size: 24px;
+    line-height: 33px;
+    color: #9d6043;
+  }
+  .phone1 span::before {
+    content: "";
+    background: url(Images/Phone.png);
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    left: 0px;
+  }
+  .phone2 {
+    font-family: 'Core Rhino 35 Light W01 Regular';
+    font-size: 24px;
+    line-height: 33px;
+    color: #9d6043;
+    padding-left: 20px;
+  }
+  
+  .geotag p{
+    line-height: 30px;
+  }
+
+  .geotag span{
+    padding-left: 15px;
+    font-family: 'Core Rhino 45 Regular W01 Rg';
+    font-size: 16px;
+    line-height: 18px;
+    color: #9d6043;
+    display: block;
+
+  }
+  .geotag span::before {
+    content: "";
+    background: url(Images/Geotag.png);
+    position: absolute;
+    width: 19px;
+    height: 26px;
+    left: 0px;
+  }
+  .banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 70px;
+    display: block;
+  }
+  #middle .container{
+    display: block;
+    background: white;
+    width: 1175px;
+    height: 1310px;
+  }
+  .row{
+    padding-top: 40px;
+  }
+  .sidebar {
+    position: absolute;
+    background: #f5f5f5;
+    width: 278px;
+    height: 573px;
+    box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.08);
+    z-index: 35;
+  }
+  .titl_m {
+    font-family: 'Myriad Pro Bold';
+    font-size: 20px;
+    line-height: 18px;
+    color: #864729;
+    text-transform: uppercase;
+    padding: 30px 0px 40px 15px;
+  }
+  .left-menu-wrap ul{
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .left-menu-wrap ul a {
+    color: #9d6043;
+    text-decoration: none;
+    font-family: 'Myriad Pro Regular';
+    font-size: 18px;
+    line-height: 18px;    
+  }
+  .left-menu-wrap p {
+    padding: 0px 0px 30px 15px;
+  }
+  .left-menu-wrap li{
+    list-style-type: none;
+  }
+  .content h1{
+    color: #864729;
+    font-family: 'Core Rhino 65 Bold W01 Regular';
+    font-size: 35px;
+    line-height: 17px;  
+  }
+  .content h2{
+    color: #864729;
+    font-family: 'Core Rhino 65 Bold W01 Regular';
+    font-size: 25px;
+    line-height: 17px;  
+  }
+  .content_inner p{
+    color: #444444;
+    font-family: 'Myriad Pro Regular';
+    font-size: 14px;
+    line-height: 20px; 
+  }
