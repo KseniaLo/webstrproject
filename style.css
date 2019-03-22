@@ -163,14 +163,15 @@
     padding-top: 70px;
     display: block;
   }
-  #middle .container{
+  .middle {
     display: block;
-
     background: white;
     width: 1175px;
     height: 1310px;
+    margin-right: auto;
+    margin-left: auto;
   }
-  .row{
+  .middle .row{
     padding-top: 40px;
   }
   .sidebar {
@@ -223,4 +224,31 @@
     font-family: 'Myriad Pro Regular';
     font-size: 14px;
     line-height: 20px; 
+  }
+  #footer {
+    background-color: #8b4d2f;
+    color: white;
+    padding-bottom: 32px;
+    padding-top: 18px;
+  }
+  .flink {
+    display: block;
+    font-family: 'Myriad Pro Regular';
+  }
+  .flink li {
+    display: inline-block;
+    float: none;
+  }
+  .flink li a {
+    padding: 0 10px;
+    color:white;
+    font-size: 15px;
+    text-align: left;
+  }
+  .flink li a:hover{
+    color: white;
+    text-decoration: none;
+  }
+  .flink .border{
+    border-right:1px solid white;
   }
