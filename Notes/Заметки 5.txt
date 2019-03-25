@@ -1,0 +1,18 @@
+open server
+чанки - чтобы в шаблоне не было кучи повторяющегося кода
+снипет для вывода информации
+шаблоны->чанки и tv-параметры->сниппеты
+
+чанки:
+{head}
+<body>
+	{header}
+	<main>
+		<container>
+		div.col-md...
+		{sidebar}
+		div.col-md-...
+		{content}
+	</main>
+	{footer}
+</body>

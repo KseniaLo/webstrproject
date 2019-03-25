@@ -73,16 +73,18 @@
     }
     
     body {
-      background: url(Images/BackGround.png);
+      background: url(images/BackGround.png);
      }
+
+     /* Шапка сайта */
 .higherMenu ul {
-        width: 100%;
-        text-align: center;
-        font-size: 16px;
-        line-height: 18px;
-        padding-bottom: 25px;
-        padding-top: 25px;
-    }
+  width: 100%;
+  font-size: 16px;
+  line-height: 18px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-left: 145px;
+}
 .higherMenu ul li {
     float: none;
     display: inline-block;
@@ -105,7 +107,8 @@
     line-height: 18px;
     color: #864729;
     display: block;
-    margin-top: 20px;
+    padding-top: 17px;
+    padding-bottom: 17px;
   }
   .logo a:hover {
     color: #864729;
@@ -115,7 +118,8 @@
     font-size: 20px;
     line-height: 18px;
     padding-left: 80px; 
-    padding-top: 34px;
+    padding-top: 17px;
+    padding-bottom: 17px;
     color: #663016;
   }
   .Phone {
@@ -144,12 +148,11 @@
     color: #9d6043;
     padding-left: 20px;
   }
-  .geotag p{
-    line-height: 30px;
-  }
-
   .geotag span{
-    padding-left: 15px;
+    position: relative;
+    line-height: 18px;
+    margin-bottom: 20px;
+    padding-left: 20px;
     font-family: 'Core Rhino 45 Regular W01 Rg';
     font-size: 16px;
     line-height: 18px;
@@ -165,6 +168,8 @@
     height: 26px;
     left: 0px;
   }
+  /* Конец шапки сайта */
+
   .banner img {
     display: block;
     width: 100%;
@@ -183,6 +188,8 @@
   .middle .row{
     padding-top: 40px;
   }
+
+  /* Левое меню сайта */
   .sidebar {
     position: absolute;
     background: #f5f5f5;
@@ -197,32 +204,63 @@
     line-height: 18px;
     color: #864729;
     text-transform: uppercase;
-    padding: 30px 0px 40px 15px;
+    padding: 30px 0px 35px 15px;
   }
   .left-menu-wrap ul{
-    margin-left: 0;
-    padding-left: 0;
+    padding-inline-start: 0px;
+    padding-left: 15px;
+  }
+  .left-menu-wrap p{
+    margin-bottom: 0px;
+    padding: 15px 0px 15px 15px;
   }
   .left-menu-wrap ul a {
+    display:block;
     color: #9d6043;
     text-decoration: none;
     font-family: 'Myriad Pro Regular';
     font-size: 18px;
     line-height: 18px;    
   }
-  .left-menu-wrap p {
-    padding: 0px 0px 30px 15px;
+  .left-menu-wrap ul li a:hover{
+    background:linear-gradient(to right, #864a31, #9c5f42 , #ae785c );
+    background-color: #8d5036;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 17px;
   }
   .left-menu-wrap li{
     list-style-type: none;
   }
+  .submenu ul{
+    display: none; 
+  }
+
+  .left-menu-wrap .submenu a:hover{
+color: #864729;
+text-decoration-line:underline;
+font-weight: bold;
+background: transparent;
+}
   .submenu li a {
     font-size: 15px;
     line-height: 16px;    
   }
   .submenu p {
-    padding: 0px 0px 10px 30px;
+    padding: 5px 0px 5px 20px;
   }
+  .submenu .first p{
+    margin-top: 15px;
+    padding-top: 0px;
+  }
+  .submenu .last p{
+    margin-bottom: 15px;
+    padding-bottom: 0px;
+  }
+  /* Конец левого меню сайта */
+
+  /* Контент */
+ 
   .content{
     padding: 0px 30px;
   }
@@ -230,20 +268,16 @@
     color:#9d6043;
     text-decoration: none;
   }
-  .final2 a:hover{
-    color: #9d6043;
-    text-decoration: none;
-  }
   .content h1{
     color: #864729;
-    /* font-family: 'Core Rhino 65 Bold W01 Regular'; */
+    font-family: 'Core Rhino 65 Bold W01 Regular';
     font-size: 35px;
     line-height: 17px;  
     font-weight: bold;
   }
   .content h2{
     color: #864729;
-    /* font-family: 'Core Rhino 65 Bold W01 Regular'; */
+    font-family: 'Core Rhino 65 Bold W01 Regular';
     font-size: 25px;
     line-height: 17px;  
     font-weight: bold;
@@ -258,6 +292,13 @@
     font-size: 14px;
     line-height: 20px; 
   }
+  .map {
+    width:814;
+    height:372;
+  }
+  /* Конец контента */
+
+  /*Подвал*/
   #footer {
     background-color: #8b4d2f;
     color: white;
@@ -309,4 +350,145 @@
   .final2 a:hover{
     color: white;
     text-decoration: underline;
+  }
+  /*Конец подвала*/
+
+  @media screen and (min-width: 992px) and (max-width: 1205px) {
+    .logo {
+      font-size: 50px;
+      line-height: 18px;
+      color: #864729;
+      display: block;
+    }
+    .conf{
+      padding-left: 50px;
+    }
+    .middle {
+      display: block;
+      background: white;
+      width: 966px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .map {
+      width:650;
+    }
+    .higherMenu ul {
+      padding-left: 100px;
+    }
+    .phone1 span{
+      font-size: 20px;
+    }
+    .phone2 {
+      font-size: 20px;
+    }
+    .banner img {
+      padding-top: 40px;
+    }
+    .sidebar {
+      width: 250px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .higherMenu ul {
+      margin-bottom: 0px;
+      width: 100%;
+      line-height: 30px;
+      padding-bottom: 65px;
+      padding-top: 10px;
+      padding-left: 150px;
+    }
+    .gl {
+      padding-top: 30px;
+      padding-left: 30px;
+    }
+    .logo {
+      font-size: 50px;
+      line-height: 18px;
+      color: #864729;
+      display: block;
+    }
+    .conf{
+      padding-left: 60px;
+      padding-top: 10px;
+      padding-bottom: 27px;
+    }
+    .Phone{
+      padding-left: 70px;
+    }
+    .phone1 span{
+      font-size: 20px;
+    }
+    .phone2 {
+      font-size: 20px;
+    }
+    .Geo{
+      padding-left: 50px;
+    }
+    .middle {
+      display: block;
+      background: white;
+      width: 750px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .banner img {
+      padding-top: 10px;
+    }
+    .sidebar {
+      width: 230px;
+      height: 373px;
+    }
+    .titl_m {
+      font-size: 16px;
+      line-height: 14px;
+      padding: 20px 0px 15px 12px;
+    }
+    .middle .container{
+      width: 730px;
+    }
+    .middle .container .row{
+      width:736px;
+      padding-top: 20px;
+    }
+    .left-menu-wrap p{
+      margin-bottom: 0px;
+      padding: 10px 0px 10px 10px;
+    }
+    .left-menu-wrap ul a {
+      font-size: 14px;
+      line-height: 10px;    
+    }
+    .submenu li a {
+      font-size: 12px;
+      line-height: 10px;    
+    }
+    .submenu p {
+      padding: 5px 0px 5px 10px;
+    }
+    .submenu .first p{
+      margin-top: 10px;
+      padding-top: 0px;
+    }
+    .submenu .last p{
+      margin-bottom: 10px;
+      padding-bottom: 0px;
+    }
+    .content {
+      padding: 0px 15px;
+    }
+    .content h1{
+      margin-top: 10px;
+      font-size: 25px;
+    }
+    .content h2 {
+      font-size: 22px;
+  }
+    .content_inner p {
+      font-size: 13px;
+      line-height: 17px;
+  }
+    .map {
+      width:650;
+    }
   }

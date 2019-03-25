@@ -6,35 +6,39 @@
 <title>Плюшка - Кондитерские изделия</title> <!-- Задаем заголовок документа -->
 <link rel="stylesheet" href="bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="style.css"> <!-- Подключаем внешнюю таблицу стилей -->
-<script src="script.js"></script> <!-- Подключаем сценарии -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
     <header id="header">
             <div class="container">
                        <nav class="higherMenu">
-                            <ul class="higherMenuStrip col-md-offset-1">
-                                <div class="col-md-2"><li><a href="" title="Главная">главная</a></li></div>
-                                <div class="col-md-3"><li><a href="" title="О компании">о компании</a></li></div>
-                                <div class="col-md-2"><li><a href="" title="Каталог"> каталог</a></li></div>   
-                                <div class="col-md-2"><li><a href="" title="Контакты">контакты</a></li></div>   
+                            <ul class="higherMenuStrip">
+                                <div class="item col-md-3 col-sm-6"><li><a href="" title="Главная">главная</a></li></div>
+                                <div class="item col-md-3 col-sm-6"><li><a href="" title="О компании">о компании</a></li></div>
+                                <div class="item col-md-3 col-sm-6"><li><a href="" title="Каталог"> каталог</a></li></div>   
+                                <div class="item col-md-3 col-sm-6"><li><a href="" title="Контакты">контакты</a></li></div>   
                             </ul>
                         </nav>
                     <div class="gl">
                      <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-md-5 col-sm-12">
                             <a href="" title="ООО «Плюшка»" class="logo">ООО «Плюшка»</a>
                             <div class="conf">Кондитерские изделия</div>
                         </div>
-                        <div  class="col-md-4">
+                        <div  class="col-md-4 col-sm-6">
                             <div class="Phone">
                                 <div class="phone1"><span>8 (800) 888-88-88</span></div>
                                 <div class="phone2">8 (800) 888-88-88</div>
                                 <div class="phone2">8 (800) 888-88-88</div>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                                <div class="geotag"><p><span>г. Оренбург,<br>ул. Примерная, дом 15</p></span></div>
-                                <div class="geotag"><p><span>г. Оренбург,<br>ул. Примерная, дом 15</p></span></div>
+                        <div class="col-md-3 col-sm-6">
+                          <div class="Geo">
+                                <div class="geotag"><span>г. Оренбург,<br>ул. Примерная, дом 15</span></div>
+                                <div class="geotag"><span>г. Оренбург,<br>ул. Примерная, дом 15</span></div>
+                          </div>
                         </div>
                      </div>
                    </div>    
@@ -43,7 +47,7 @@
     <div class="container">
       <div class="row">
             <div class="banner">
-                <img src="Images/Banner.png">
+                <img src="images/Banner.png">
             </div>
       </div>
     </div>
@@ -51,20 +55,19 @@
         <div class="col-md-12">
             <div class="container">
               <div class="row">
-                <div class="col-md-3 col-sm-12">
+                <div class="col-md-3 col-sm-4">
                   <aside class="sidebar">
                     <div class="titl_m">Каталог товаров</div>
                     <nav id="sidebar-menu" class="left-menu-wrap">
                       <ul>
                         <li><a href="" title="Пример пункта"><p>Пример пункта</p></a></li>
                         <li><a href="" title="Пример пункта 2"><p>Пример пункта 2</p></a></li>
-                        <li><a href="" title="Выпадющий пункт"> <p>Выпадющий пункт</p></a>
-                          <ul class="submenu">
-                          <!-- <li><a href="" title="Выпадющий пункт"> <p>Выпадющий пункт</p></a></li> -->
-                          <li><a href=""title="Выпадающее меню. Примерный текст в две строки"><p>Выпадающее меню. Примерный<br>текст в две строки</p></a></li>
+                        <li><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true" title="Выпадющий пункт" href="" > <p>Выпадющий пункт</p></a>
+                          <ul class="submenu" role="menu">
+                          <li><a class="first" href=""title="Выпадающее меню. Примерный текст в две строки"><p>Выпадающее меню. Примерный<br>текст в две строки</p></a></li>
                           <li><a href="" title="Выпадающее меню"><p>Выпадающее меню</p></a></li>
                           <li><a href=""title="Выпадающее меню"><p>Выпадающее меню</p></a></li>
-                          <li><a href=""title="Выпадающее меню"><p>Выпадающее меню</p></a></li>
+                          <li><a class="last" href=""title="Выпадающее меню"><p>Выпадающее меню</p></a></li>
                           </ul>
                         </li>
                         <li><a href="" title="Пример пункта 3"><p>Пример пункта 3</p></a></li>
@@ -73,9 +76,8 @@
                     </nav>
                   </aside>
                 </div>
-                <div class="col-md-9 col-sm-12">
+                <div class="col-md-9 col-sm-8">
                   <div class="content">
-
                       <div><a  href="" title="Главная">Главная</a></li> / <a  href="" title="О компании">О компании</a></div>
                       <h1>О компании</h1>
                       <div class="content_inner">
@@ -90,7 +92,9 @@
                           <h2>Новый заголовок</h2>
                         <p>Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности способствует подготовке и реализации системы масштабного изменения ряда параметров. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности в значительной степени обуславливает создание существующих финансовых и административных условий. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации направлений прогрессивного развития?</p>
                         <h2>Карта проезда</h2>
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0e3304218a5bdfcfdd09022ac3b034932ac8d02cecb4359ef34655e13e2d7f42&amp;width=814&amp;height=372&amp;lang=ru_RU&amp;scroll=true"></script>
+                        <div class="map">
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac5ec1604556fd615f23b2c225e0bf31d1e37aa388931d802052044a634f026e0&amp;width=100%25&amp;height=372&amp;lang=ru_RU&amp;scroll=true"></script>
+                        </div>
                       </div>
                   </div>
                 </div>
@@ -101,8 +105,8 @@
     <footer id="footer">
         <div class="container">
           <div class="row">
-            <div class="col-md-4">      
-              <!--  col-sm-4 col-xs-6 -->
+            <div class="col-md-5 col-sm-7">      
+              <!--   col-xs-6 -->
               <div class="final1">
                 <ul class="flink1">  
                   <li><a  href="" title="Пункт меню">Пункт меню</a></li>
@@ -112,10 +116,10 @@
                 <div class="flink2">ООО «Плюшка» 2017 г. © Все права защищены.</div>
               </div>
             </div>
-          <div class="col-md-3 col-md-offset-5">
-                <!--   col-sm-6 col-xs-6 w_110-->
+          <div class="col-md-3 col-sm-4 col-md-offset-4 col-sm-offset-1">
+                <!--   col-xs-6 w_110-->
                 <div class="final2">
-                  <div class="end"><img src="Images/orenSite.png"></div>
+                  <div class="end"><img src="images/orenSite.png"></div>
                   <div><a class="siteMaking" href="" title="Создание сайтов">Создание сайтов</a> в Оренбурге</div>
                 </div>
           </div>
