@@ -232,28 +232,28 @@
   .left-menu-wrap li{
     list-style-type: none;
   }
-  .submenu ul{
-    display: none; 
+  #submenu ul{
+    display: block; 
   }
 
-  .left-menu-wrap .submenu a:hover{
+  .left-menu-wrap #submenu a:hover{
 color: #864729;
 text-decoration-line:underline;
 font-weight: bold;
 background: transparent;
 }
-  .submenu li a {
+#submenu li a {
     font-size: 15px;
     line-height: 16px;    
   }
-  .submenu p {
+  #submenu p {
     padding: 5px 0px 5px 20px;
   }
-  .submenu .first p{
+  #submenu .first p{
     margin-top: 15px;
     padding-top: 0px;
   }
-  .submenu .last p{
+  #submenu .last p{
     margin-bottom: 15px;
     padding-bottom: 0px;
   }
@@ -459,18 +459,18 @@ background: transparent;
       font-size: 14px;
       line-height: 10px;    
     }
-    .submenu li a {
+    #submenu li a {
       font-size: 12px;
       line-height: 10px;    
     }
-    .submenu p {
+    #submenu p {
       padding: 5px 0px 5px 10px;
     }
-    .submenu .first p{
+    #submenu .first p{
       margin-top: 10px;
       padding-top: 0px;
     }
-    .submenu .last p{
+    #submenu .last p{
       margin-bottom: 10px;
       padding-bottom: 0px;
     }

@@ -2,7 +2,7 @@
 <html>
 <head> <!-- Техническая информация о документе -->
 <meta charset="UTF-8"> <!-- Определяем кодировку символов документа -->
-<meta name="vewport" content="width=width-device,initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Плюшка - Кондитерские изделия</title> <!-- Задаем заголовок документа -->
 <link rel="stylesheet" href="bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="style.css"> <!-- Подключаем внешнюю таблицу стилей -->
@@ -62,8 +62,8 @@
                       <ul>
                         <li><a href="" title="Пример пункта"><p>Пример пункта</p></a></li>
                         <li><a href="" title="Пример пункта 2"><p>Пример пункта 2</p></a></li>
-                        <li><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true" title="Выпадющий пункт" href="" > <p>Выпадющий пункт</p></a>
-                          <ul class="submenu" role="menu">
+                        <li><a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#submenu" aria-expanded="false" aria-controls="submenu" title="Выпадющий пункт" href="" > <p>Выпадющий пункт</p></a>
+                          <ul id="submenu" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sidebar-menu">
                           <li><a class="first" href=""title="Выпадающее меню. Примерный текст в две строки"><p>Выпадающее меню. Примерный<br>текст в две строки</p></a></li>
                           <li><a href="" title="Выпадающее меню"><p>Выпадающее меню</p></a></li>
                           <li><a href=""title="Выпадающее меню"><p>Выпадающее меню</p></a></li>
