@@ -507,7 +507,7 @@ background: transparent;
       width:650;
     }
   }
-  @media screen and (min-width: 450px) and (max-width: 767px) {
+  @media screen and (min-width: 414px) and (max-width: 767px) {
     
   .higherMenu {  
       border-bottom: 0;  
