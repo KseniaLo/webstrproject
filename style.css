@@ -68,25 +68,27 @@
      }
 
      /* Шапка сайта */
-     .higherMenu a#pull {  
-      display: none;
-      color: #9d6043;
-    text-align:center;   
-    text-decoration: none;
-    font-family: 'Myriad Pro Black SemiExtended';
-    padding: 10px 0px;
-  }
 .higherMenu ul {
   width: 100%;
   font-size: 16px;
   line-height: 18px;
-  padding-bottom: 25px;
+  margin-bottom: 0px;
+  padding-bottom: 40px;
   padding-top: 25px;
   padding-left: 145px;
+  border-bottom: 2px #e3e3e3 solid;
 }
 .higherMenu ul li {
     float: none;
     display: inline-block;
+}
+.higherMenu ul li:hover {
+  padding-bottom: 22px;
+  border-bottom: 2px #864729 solid
+}
+.higherMenu ul  li.active {
+  padding-bottom: 22px;
+  border-bottom: 2px #864729 solid
 }
 .higherMenu ul a {
     color: #9d6043;
@@ -99,7 +101,7 @@
   width: 100%;
   padding-top: 50px;
 }
-.logo {
+a.logo {
     font-family: 'NautilusPompilius';
     text-decoration: none;
     font-size: 60px;
@@ -111,6 +113,7 @@
   }
   .logo a:hover {
     color: #864729;
+    text-decoration: none;
   }
   .conf{
     font-family: 'CoreRhino45Regular';
@@ -126,7 +129,7 @@
   }
   .phone1 span{
     position: relative;
-    padding-left: 20px;
+    padding-left: 25px;
     font-family: 'Core Rhino 35 Light W01 Regular';
     font-size: 24px;
     line-height: 33px;
@@ -145,13 +148,13 @@
     font-size: 24px;
     line-height: 33px;
     color: #9d6043;
-    padding-left: 20px;
+    padding-left: 25px;
   }
   .geotag span{
     position: relative;
     line-height: 18px;
     margin-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 34px;
     font-family: 'CoreRhino45Regular';
     font-size: 16px;
     line-height: 18px;
@@ -260,7 +263,8 @@ background: transparent;
   /* Контент */
  
   .content{
-    padding: 0px 30px;
+    padding-right: 30px;
+    padding-left: 10px;
   }
   .content a {
     color:#9d6043;
@@ -275,6 +279,9 @@ background: transparent;
     font-size: 35px;
     line-height: 17px;  
     font-weight: bold;
+    margin: 0px;
+    padding-bottom: 37px;
+    padding-top: 15px;
   }
   .content h2{
     color: #864729;
@@ -282,6 +289,9 @@ background: transparent;
     font-size: 25px;
     line-height: 17px;  
     font-weight: bold;
+    margin: 0px;
+    padding-bottom: 30px;
+    padding-top: 30px;
   }
   .content_inner ul li{
     list-style-type:disc;
@@ -309,6 +319,7 @@ background: transparent;
   }
   .final1{
     text-align: left;
+    padding-left: 48px;
   }
   .flink1 {
     display: block;
@@ -356,10 +367,8 @@ background: transparent;
 
   @media screen and (min-width: 992px) and (max-width: 1205px) {
     .logo {
-      font-size: 50px;
-      line-height: 18px;
-      color: #864729;
-      display: block;
+      font-size: 50px !important;
+      line-height: 18px !important;
     }
     .conf{
       padding-left: 50px;
@@ -378,10 +387,13 @@ background: transparent;
       padding-left: 100px;
     }
     .phone1 span{
-      font-size: 20px;
+      font-size: 24px;
     }
     .phone2 {
-      font-size: 20px;
+      font-size: 24px;
+    }
+    .geotag span {
+      font-size: 15px;
     }
     .banner img {
       padding-top: 40px;
@@ -393,36 +405,24 @@ background: transparent;
   }
   @media screen and (min-width: 768px) and (max-width: 991px) {
     .higherMenu ul {
-      margin-bottom: 0px;
-      width: 100%;
-      line-height: 30px;
-      padding-bottom: 65px;
-      padding-top: 10px;
-      padding-left: 150px;
+      padding-left: 50px;
     }
     .gl {
       padding-top: 30px;
-      padding-left: 30px;
+      padding-left: 0px;
     }
     .logo {
-      font-size: 50px;
-      line-height: 18px;
-      color: #864729;
-      display: block;
+      font-size: 60px !important;
+      text-align: center;
     }
     .conf{
-      padding-left: 60px;
+      padding-left: 0px;
       padding-top: 10px;
       padding-bottom: 27px;
+      text-align: center;
     }
     .Phone{
       padding-left: 70px;
-    }
-    .phone1 span{
-      font-size: 20px;
-    }
-    .phone2 {
-      font-size: 20px;
     }
     .Geo{
       padding-left: 50px;
@@ -438,7 +438,7 @@ background: transparent;
       padding-top: 10px;
     }
     .sidebar {
-      width: 100%;
+    width: 100%;
     padding-bottom: 100px;
     }
     .titl_m {
@@ -494,40 +494,53 @@ background: transparent;
       width:650;
     }
   }
-  @media screen and (min-width: 414px) and (max-width: 767px) {
-    
-  .higherMenu {  
-      border-bottom: 0;  
-  }  
-  .higherMenu ul {  
-      display: none;  
-      height: auto;  
-  }  
-  .higherMenu a#pull {  
-      display: block;
+  @media screen and (min-width: 560px) and (max-width: 767px) {
+   
+    .higherMenu {  
+      border-bottom: 0;
+      background-color: #f5f5f5;
+      color: white;
       width: 100%;  
-      position: relative;  
-  }  
-  .higherMenu a#pull:after {  
-      content:"";
-      width: 30px;  
-      height: 30px;  
-      display: inline-block;  
-      position: absolute;  
-      right: 15px;  
-      top: 10px;  
-  } 
+    }  
+    .higherMenu ul {
+      border-bottom: none;
+    }
+  .nav-tog-btn {
+      margin-right: 0 !important;
+      background-color: #8b4d2f;
+  }
+  .nav-tog-btn:hover {
+      background: #d14432 !important;
+  }
+  .navbar-toggle .icon-bar {
+    background-color: #F4F4F3;
+  }
+  .navbar-toggle {
+     display: block;
+  }
     .higherMenu ul {
       width: 100%;
       text-align: center;
       padding: 25px 0px;
+    }
+    .higherMenu ul li{
+      padding-bottom: 20px;
+    }
+    .higherMenu ul li:hover {
+      padding-bottom: 20px;
+      border-bottom:none;
+    }
+    .higherMenu ul  li.active {
+      padding-bottom: 20px;
+      border-bottom:none;
+      text-decoration: none !important;
     }
     .gl {
       padding-top: 10px;
       padding-left: 0px;
     }
     .logo {
-      font-size: 50px;
+      font-size: 50px !important;
       line-height: 18px;
       color: #864729;
       display: block;
@@ -536,27 +549,28 @@ background: transparent;
     .conf{
       padding: 0px 0px 27px 0px;
       text-align: center;
+      font-size: 16px;
     }
     .Phone{
       padding-left: 0px;
       text-align: center;
     }
     .phone1 span{
-      font-size: 16px;
-      line-height: 19px;
+      font-size: 20px;
+      line-height: 24px;
     }
     .phone2 {
-      font-size: 16px;
-      line-height: 19px;
+      font-size: 20px;
+      line-height: 24px;
     }
     .Geo{
       padding-left: 40px;
     }
     .geotag span{
-      line-height: 15px;
-      margin-bottom: 0px;
-      padding-left: 25px;
-      font-size: 10px;
+    line-height: 18px;
+    margin-bottom: 0px;
+    padding-left: 25px;
+    font-size: 15px;
     }
     .middle {
       background: white;
@@ -635,6 +649,7 @@ background: transparent;
     font-size: 14px;
   }
   .final1{
+    padding-left: 0px;
     text-align: center;
   }
   .final2{
@@ -644,40 +659,52 @@ background: transparent;
     font-size: 12px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 413px) {
-    
+@media screen and (min-width: 320px) and (max-width: 599px) {
   .higherMenu {  
-    border-bottom: 0;  
-}  
-.higherMenu ul {  
-    display: none;  
-    height: auto;  
-}  
-.higherMenu a#pull {  
-    display: block;
+    border-bottom: 0;
+    background-color: #f5f5f5;
+    color: white;
     width: 100%;  
-    position: relative;  
-}  
-.higherMenu a#pull:after {  
-    content:"";
-    width: 30px;  
-    height: 30px;  
-    display: inline-block;  
-    position: absolute;  
-    right: 15px;  
-    top: 10px;  
-} 
+  }  
+  .higherMenu ul {
+    border-bottom: none;
+  }
+.nav-tog-btn {
+    margin-right: 0 !important;
+    background-color: #8b4d2f;
+}
+.nav-tog-btn:hover {
+    background: #d14432 !important;
+}
+.navbar-toggle .icon-bar {
+  background-color: #F4F4F3;
+}
+.navbar-toggle {
+   display: block;
+}
   .higherMenu ul {
     width: 100%;
     text-align: center;
     padding: 25px 0px;
+  }
+  .higherMenu ul li{
+    padding-bottom: 20px;
+  }
+  .higherMenu ul li:hover {
+    padding-bottom: 20px;
+    border-bottom:none;
+  }
+  .higherMenu ul  li.active {
+    padding-bottom: 20px;
+    border-bottom:none;
+    text-decoration: none !important;
   }
   .gl {
     padding-top: 10px;
     padding-left: 0px;
   }
   .logo {
-    font-size: 40px;
+    font-size: 45px !important;
     line-height: 10px;
     color: #864729;
     display: block;
@@ -694,21 +721,21 @@ background: transparent;
     text-align: center;
   }
   .phone1 span{
-    font-size: 10px;
-    line-height: 15px;
+    font-size: 17px !important;
+    line-height: 16px !important;
   }
   .phone2 {
-    font-size: 10px;
-    line-height: 20px;
+    font-size: 17px !important;
+    line-height: 22px !important;
   }
   .Geo{
-    padding-left: 0px;
+    padding-left: 30px;
   }
   .geotag span{
-    line-height: 15px;
+    line-height: 16px !important;
     margin-bottom: 0px;
     padding-left: 25px;
-    font-size: 10px;
+    font-size: 12px !important;
   }
   .middle {
     background: white;
@@ -788,6 +815,7 @@ background: transparent;
 }
 .final1{
   text-align: center;
+  padding-left: 0px;
 }
 .final2{
   text-align: center;
@@ -795,4 +823,23 @@ background: transparent;
 .final2 a {
   font-size: 12px;
 }
+}
+@media screen and (min-width: 320px) and (max-width: 472px) {
+  .phone1 span{
+    font-size: 15px !important;
+    line-height: 16px !important;
   }
+  .phone2 {
+    font-size: 15px !important;
+    line-height: 22px !important;
+  }
+  .geotag span{
+    line-height: 15px !important;
+    margin-bottom: 0px;
+    padding-left: 25px;
+    font-size: 11px !important;
+  }
+  .Geo{
+    padding-left: 0px;
+  }
+}

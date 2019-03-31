@@ -7,20 +7,25 @@
 <link rel="stylesheet" href="bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="style.css"> <!-- Подключаем внешнюю таблицу стилей -->
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-<script src="js/script.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
     <header id="header">
             <div class="container">
                        <nav class="higherMenu">
-                          <a id="pull" title="Меню" href="">Меню</a>
+                            <button type="button" class="navbar-toggle nav-tog-btn" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar nav-icon"></span>
+                            <span class="icon-bar nav-icon"></span>
+                            <span class="icon-bar nav-icon"></span>
+                            </button>
+                          <div id="myNavbar" class="collapse navbar-collapse" aria-expanded="false">
                             <ul class="higherMenuStrip">
-                                <div class="item col-md-3 col-sm-6"><li><a href="" title="Главная">главная</a></li></div>
-                                <div class="item col-md-3 col-sm-6"><li><a href="" title="О компании">о компании</a></li></div>
-                                <div class="item col-md-3 col-sm-6"><li><a href="" title="Каталог"> каталог</a></li></div>   
-                                <div class="item col-md-3 col-sm-6"><li><a href="" title="Контакты">контакты</a></li></div>   
-                            </ul> 
+                                <div class="item col-md-3 col-sm-3 col-xs-12"><li class="active"><a href="" title="Главная">главная</a></li></div>
+                                <div class="item col-md-3 col-sm-3 col-xs-12"><li><a href="" title="О компании">о компании</a></li></div>
+                                <div class="item col-md-3 col-sm-3 col-xs-12"><li><a href="" title="Каталог"> каталог</a></li></div>   
+                                <div class="item col-md-3 col-sm-3 col-xs-12"><li><a href="" title="Контакты">контакты</a></li></div>   
+                            </ul>
+                          </div>
                         </nav>
                     <div class="gl">
                      <div class="row">
@@ -103,7 +108,6 @@
         <div class="container">
           <div class="row">
             <div class="col-md-5 col-sm-7 col-xs-12">      
-              <!--    -->
               <div class="final1">
                 <ul class="flink1">  
                   <li><a  href="" title="Пункт меню">Пункт меню</a></li>
@@ -114,7 +118,6 @@
               </div>
             </div>
           <div class="col-md-3 col-sm-4 col-md-offset-4 col-sm-offset-1 col-xs-12">
-                <!--    w_110-->
                 <div class="final2">
                   <div class="end"><img src="images/orenSite.png"></div>
                   <div><a class="siteMaking" href="" title="Создание сайтов">Создание сайтов</a> в Оренбурге</div>
